@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,8 +40,11 @@ session_start();
                                 <div class="alert alert-info fade show" role="alert">
                                     Кнопка была нажата: <b><?php echo (int) $_SESSION['counter']; ?></b> раз
                                 </div>
-                                <form action="lesson_14.php" method="post">
-                                    <button class="btn btn-success mt-3" type="submit">Submit</button>
+                                <form action="less_14.php" method="post">
+                                    <button class="btn btn-success mt-3">Submit</button>
+                                </form>
+                                <form action="less_141.php" method="post">
+                                    <button class="btn btn-success mt-3">Сброс</button>
                                 </form>
                             </div>
                         </div>
