@@ -1,8 +1,6 @@
 <?php
 session_start();
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,13 +41,15 @@ session_start();
                         <div class="panel-content">
                             <div class="form-group">
 
-                                <div class="alert alert-info"><?php echo $_SESSION['text'];
-                                                                unset($_SESSION['text']); ?>
+
+                                <div class="alert alert-info"><?php echo $_SESSION['danger']; ?>
                                 </div>
-                                <form action="lesson_13.php" method="post">
+
+                                <form action="less_13.php" method="post">
+
                                     <label class="form-label" for="simpleinput">Text</label>
                                     <input type="text" id="simpleinput" class="form-control" name="text">
-                                    <button class="btn btn-success mt-3" type="submit">Submit</button>
+                                    <button class="btn btn-success mt-3">Submit</button>
                                 </form>
                             </div>
                         </div>
